@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    --color:#FDFFF6;
+}
+
+body{
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(180deg, #031A09, #294E28) no-repeat;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    background: #031A09;
+    height: 10%;
+    color: var(--color);
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    border-bottom: 4px solid #E2F87B;
+}
+
+header h1{
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.book-list{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.book-card{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    margin: 20px;
+    border-bottom: 5px solid #631d7a;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.book-card:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    transform: scale(1.02);
+}
+
+.card-head{
+    color: var(--color);
+    font-size: 1.5em;
+    margin: 20px;
+    border-bottom: 2px solid #E2F87B;
+}
+
+.card-content{
+    color: var(--color);
+    font-size: 1em;
+    margin: 20px;
+}
+
+.btn-status-change{
+    margin: 20px;
+}
