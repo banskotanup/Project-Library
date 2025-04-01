@@ -1,4 +1,4 @@
-@media (max-width: 1024px){
+@media (max-width: 1024px) and (min-width: 669px){
     body{
         width: 100%;
         height: 100vh;
@@ -27,6 +27,59 @@
         left: 10%;
         top: 20%;
         height: 50%;
+        width: 80vw;
+        transform: translateY(-0.1px);
+        margin-right: 10px;
+    }
+
+    .status{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .option{
+        text-align: center;
+        display: flex;
+    }
+
+    .option input{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    
+    .option label{
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    footer{
+        height: 10vh;
+    }
+}
+
+@media (max-width: 669px){
+    body{
+        width: 100%;
+        height: 100%;
+    }
+
+    html{
+        background-color: #294E28;
+    }
+
+    header{
+        height: 10vh;
+    }
+
+    .book-list{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    dialog{
+        left: 10%;
+        top: 20%;
+        height: 64%;
         width: 80vw;
         transform: translateY(-0.1px);
         margin-right: 10px;
