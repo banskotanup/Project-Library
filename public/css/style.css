@@ -152,7 +152,7 @@ dialog{
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8);
     border-radius: 8px;
     color: #FDFFF6;
-    height: 57%;
+    height: 64%;
     width: 40%;
 }
 
@@ -168,6 +168,7 @@ form label{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 form div{
     font-size: 1.2em;
     margin: 10px;
@@ -198,6 +199,7 @@ form input:focus{
 .status{
     display: flex;
     transform: translateX(-20px);
+    flex-direction: column;
 }
 
 .status input{
@@ -207,6 +209,21 @@ form input:focus{
 
 .status label{
     font-size: 1em;
+    margin-left: 10px;
+}
+
+.option{
+    text-align: center;
+    display: flex;
+}
+
+.option input{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.option label{
+    font-size: 18px;
     margin-left: 10px;
 }
 
