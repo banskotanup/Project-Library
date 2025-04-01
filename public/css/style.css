@@ -4,14 +4,24 @@
     box-sizing: border-box;
 }
 
+html{
+    background-color: #294E28;
+}
+
 body{
     --color:#FDFFF6;
 }
 
 body{
     height: 100vh;
+    display: flex;
+    flex-direction: column;
     font-family: "Roboto", sans-serif;
     background: linear-gradient(180deg, #031A09, #294E28) no-repeat;
+}
+
+main{
+    flex: 1;
 }
 
 header{
@@ -27,6 +37,13 @@ header{
     position: -webkit-sticky;
     position: sticky;
     border-bottom: 4px solid #E2F87B;
+}
+
+img{
+    height: 30px;
+    width: 70px;
+    margin-right: 10px;
+    transform: translateY(-5px);
 }
 
 header h1{
@@ -70,4 +87,185 @@ header h1{
 
 .btn-status-change{
     margin: 20px;
+    background-color: #E2F87B;
+    height: 30px;
+    width: 110px;
+    font-size: 0.9em;
+    padding: 5px;
+    border: 1px solid #E2F87B;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-status-change:hover{
+    background-color: #9daf49;
+    transform: scale(1.04);
+}
+
+.btn-delete{
+    background-color: rgb(223, 13, 13);
+    height: 30px;
+    width: 110px;
+    font-size: 0.9em;
+    padding: 5px;
+    border: 1px solid rgb(223, 13, 13);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-delete:hover{
+    transform: scale(1.04);
+    background-color: rgb(146, 11, 11);
+}
+
+section{
+    text-align: end;
+    margin-right: 25px;
+}
+
+.add-book{
+    background-color: rgb(68, 68, 172);
+    height: 30px;
+    width: 110px;
+    font-size: 0.9em;
+    padding: 5px;
+    border: 1px solid rgb(68, 68, 172);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transform: translateY(20px);
+}
+
+.add-book:hover{
+    background-color: rgb(27, 27, 134);
+}
+
+dialog{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: none;
+    background: #294E28;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    color: #FDFFF6;
+    height: 57%;
+    width: 40%;
+}
+
+dialog form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+}
+
+form label{
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+form div{
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+form button{
+    font-size: 1.2em;
+    margin: 10px;
+    height: 40px;
+    width: auto;
+}
+
+form input{
+    height: 40px;
+    width: auto;
+    background-color: #294E28;
+    color: #FDFFF6;
+    border-radius: 10px;
+    border: 1px solid #E2F87B;
+    font-size: 1.1em;
+    padding: 10px;
+}
+
+form input:focus{
+    border: 1px solid #9daf49;
+}
+
+.status{
+    display: flex;
+    transform: translateX(-20px);
+}
+
+.status input{
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+.status label{
+    font-size: 1em;
+    margin-left: 10px;
+}
+
+.add-book-post{
+    background-color: rgb(68, 68, 172);
+    height: 40px;
+    width: 110px;
+    font-size: 1.1em;
+    border: 1px solid rgb(68, 68, 172);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transform: translateY(-30px);
+    transform: translateX(-10px);
+}
+
+.add-book-post:hover{
+    background-color: rgb(43, 43, 196);
+}
+
+hr{
+    margin-top: 10px;
+    border: 1px solid #E2F87B;
+}
+
+.dialog-header{
+    display: flex;
+    margin-left: 5px;
+    margin-right: 5px;
+    justify-content: space-between;
+}
+
+.close-dialog{
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    width: 20px;
+    cursor: pointer;
+}
+
+.close-dialog:hover{
+    background-color: rgb(182, 29, 29);
+}
+
+form label span{
+    color: rgb(207, 86, 86);
+}
+
+footer{
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    height: 7%;
+    width: 100%;
+    color: #FDFFF6;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }

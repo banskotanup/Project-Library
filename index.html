@@ -7,14 +7,51 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jersey+10&family=Jersey+15&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/responsive.css">
     <title>Library</title>
 </head>
 <body>
-    <header>
-        <h1>Odin Personal Library</h1>
-    </header>
-    <div class="book-list">
-    </div>
+    <main>
+        <header>
+            <img src="./public/images/book.webp" alt="">
+            <h1>Odin Personal Library</h1>
+        </header>
+        <section>
+            <button type="button" class="add-book">Add new book</button>
+        </section>
+        <div class="book-list">
+        </div>
+        <dialog>
+            <div class="dialog-header">
+                <h2>Add Book</h2>
+            <button class="close-dialog" type="button">X</button>
+            </div>
+            <hr>
+            <form action="">
+                <label for="book_name">Book Name <span>*</span></label>
+                <input type="text" name="book_name" id="book_name" required placeholder="Enter book name">
+                <label for="author">Author <span>*</span></label>
+                <input type="text" name="author" id="author" required placeholder="Enter author name">
+                <label for="pages">Page <span>*</span></label>
+                <input type="text" name="pages" id="pages" required placeholder="Enter total pages">
+        
+                <div class="status">
+                    <label>Status : </label>
+                    <div class="option">
+                        <input type="radio" name="status" id="read" value="true" required>
+                        <label for="read">Read</label>
+                        <input type="radio" name="status" id="notRead" value="false">
+                        <label for="notRead">Not yet read</label>
+                    </div>
+                </div>
+                <button type="submit" class="add-book-post">Add book</button>
+            </form>
+        </dialog>
+    </main>
+
+    <footer>
+        <p>Anup Banskota © <script>document.write(new Date().getFullYear())</script></p>
+    </footer>
     <script src="public/js/main.js"></script>
 </body>
 </html>
