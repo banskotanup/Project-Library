@@ -34,10 +34,10 @@ function addBookToLibrary(title, author, pages, isRead) {
 
 
 //manual add data to array and check whether its working or not.
-addBookToLibrary("John", "Anup", 230, false);
-addBookToLibrary("Ram", "Shristy", 260, false);
-addBookToLibrary("Shyam", "Sanam", 270, true);
-addBookToLibrary("Hari", "Anoop", 275, true);
+addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 230, false);
+addBookToLibrary("Harry Potter", "J.K. Rowling", 260, false);
+addBookToLibrary("A Game of Thrones", "George R. R. Martin", 270, true);
+addBookToLibrary("To Kill a Mockingbird", "Harper Lee", 275, true);
 
 
 //loop through the array and display each book.
