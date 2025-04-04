@@ -18,6 +18,11 @@
         height: 10vh;
     }
 
+    header h1{
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+
     .book-list{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -69,6 +74,11 @@
 
     header{
         height: 10vh;
+    }
+
+    header h1{
+        font-size: 1.2em;
+        font-weight: 600;
     }
 
     .book-list{
